@@ -1,0 +1,43 @@
+🤘basic react app -- npx create-vite@latest 
+ -> In project name -- .
+ -> In package name -- none
+ -> choose react + javascript
+
+🤘tailwind css setup -- using tailwind 
+
+🤘create app component
+
+🤘download images from thirtysixstudio
+ -> inspect the website page and goto network tab you need to set image and reload the website
+ -> and image click right click and copy har
+ -> goto google search "save image from network tab github"
+ -> goto website thirtysixstudio into console write var har = and paste that har where you copied
+ -> if showing undefind then you are right
+ -> paste this code
+      # var imageUrls = [];
+      # har.log.entries.forEach(function (entry) {
+      #   // This step will filter out all URLs except images. If you just want e.g. just jpg's then check mimeType against "image/jpeg", etc.
+      #   if (entry.response.content.mimeType.indexOf("image/") !== 0) return;
+      #   imageUrls.push(entry.request.url);
+      # });
+      # console.log(imageUrls.join('\n'));
+  -> copy the all image and paste in your project untitled.txt
+  -> then remove extra image and goto first image at the end move cursor and press into keyboard ctrl+f to replace png to png", also goto first https and replace http to "http
+  -> make a array
+  -> create new file and cut the hole array and paste into
+    #  export default (paste the code)
+
+🤘create canvas component
+
+🤘load first 150 images and show in the canvas
+
+🤘animate the canvas
+
+🤘make canvas dynamic so that it loads 150 images from desired index
+
+🤘reuse the canvas component to create a new canvas as many times as needed
+
+
+🤘for gsap https://gsap.com/resources/React/ also install npm install gsap
+
+🤘for smooth scrolling https://scroll.locomotive.ca/docs#/quickstart?id=installation
